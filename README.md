@@ -7,7 +7,9 @@ ls -al ~/.ssh
 
 
 ## Generate a new private and public key pair for ssh access
-ssh-keygen -t ed25519 -C "your_email@example.com"
+```ssh-keygen -t ed25519 -C "your_email@example.com" ```
+
+-C flag is for adding a comment
 
 ## Start the ssh-agent
 eval "$(ssh-agent -s)"
@@ -17,7 +19,7 @@ ssh-add ~/.ssh/id_ed25519
 
 ## Add the SSH public key to your account on GitHub
 
-### Copy the SSH public key to your clipboard
+### Copy the full SSH public key to your clipboard
 
 ### Add to github settings
 - click your profile photo, then click Settings.
